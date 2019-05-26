@@ -1,0 +1,16 @@
+cmake_minimum_required(VERSION 3.13)
+project(words_counter)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_BUILD_TYPE Release)
+find_package(Threads REQUIRED)
+find_package(Libarchive REQUIRED)
+find_package(ICU REQUIRED COMPONENTS uc  i18n)
+set (Boost_USE_STATIC_LIBS OFF)
+set (Boost_USE_MULTITHREAD ON)
+find_package(Boost REQUIRED COMPONENTS locale system filesystem thread)
+
+add_executable(words main.cpp reading.cpp reading.h time.h ParallelQueue.h)
+#add_executable(words main.cpp ParallelQueue.h)
+target_link_libraries(words Boost::locale Boost::system Boost::filesystem archive Boost::thread Threads::Threads)
+#target_link_libraries(words)

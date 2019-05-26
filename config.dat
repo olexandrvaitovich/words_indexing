@@ -1,0 +1,5 @@
+indir="../../text"
+out_by_a="../output_a.txt"
+out_by_n="../output_n.txt"
+indexing_threads=5
+merging_threads=3

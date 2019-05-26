@@ -1,0 +1,16 @@
+C:\Users\vaitovich\.CLion2019.1\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/d/Downloads/project2
+-- Found the following ICU libraries:
+--   uc (required)
+--   i18n (required)
+-- Boost version: 1.66.0
+-- Found the following Boost libraries:
+--   locale
+--   system
+--   filesystem
+--   thread
+--   chrono
+--   date_time
+--   atomic
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/d/Downloads/project2/cmake-build-debug
